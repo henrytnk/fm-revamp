@@ -5,9 +5,10 @@ import Link from "next/link";
 
 export default function CTA() {
   return (
-    <section className="bg-white py-24 md:py-32">
+    <section className="bg-[#fafaf8] py-24 md:py-32 border-t border-[#e5e5e5]">
       <div className="max-w-4xl mx-auto px-6 lg:px-8 text-center">
         <AnimateOnScroll>
+          <div className="w-16 h-px bg-gradient-to-r from-transparent via-[#eeba2f]/60 to-transparent mx-auto mb-10" />
           <p className="text-xs font-semibold text-[#eeba2f] tracking-widest uppercase mb-4">
             Ready When You Are
           </p>

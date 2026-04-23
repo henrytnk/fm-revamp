@@ -84,14 +84,14 @@ export default function Hero() {
           initial={{ opacity: 0, y: 20 }}
           animate={{ opacity: 1, y: 0 }}
           transition={{ duration: 0.7, delay: 0.35 }}
-          className="flex flex-wrap items-center justify-center gap-8 md:gap-16 mb-12"
+          className="flex flex-wrap items-center justify-center mb-12"
         >
           {[
             { value: "18+", label: "YEARS BUILDING" },
             { value: "350+", label: "GLOBAL CLIENTS" },
             { value: "1000+", label: "CAMPAIGNS MANAGED" },
-          ].map((stat) => (
-            <div key={stat.label} className="text-center">
+          ].map((stat, i, arr) => (
+            <div key={stat.label} className={`text-center px-8 md:px-14 ${i < arr.length - 1 ? "border-r border-white/10" : ""}`}>
               <div className="text-4xl font-black text-white mb-1">{stat.value}</div>
               <div className="text-xs font-semibold text-white/40 tracking-widest">{stat.label}</div>
             </div>
@@ -131,6 +131,7 @@ export default function Hero() {
           <p className="text-xs font-semibold text-white/30 tracking-widest uppercase mb-8">
             Trusted Where Performance Is Measured
           </p>
+          <div className="w-16 h-px bg-gradient-to-r from-transparent via-[#eeba2f]/40 to-transparent mx-auto mb-8" />
           <div className="flex flex-wrap items-center justify-center gap-8 md:gap-10">
             {clients.slice(0, 8).map((client) => (
               <div key={client.name} className="opacity-50 hover:opacity-80 transition-opacity">

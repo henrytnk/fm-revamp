@@ -34,21 +34,18 @@ export default function Reposition() {
         <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
           {retired.map((item, i) => (
             <AnimateOnScroll key={item.from} delay={i * 100}>
-              <div className="bg-white/5 rounded-2xl p-8 border border-white/10">
-                <div className="flex items-start gap-6">
-                  <div className="flex-1">
-                    <div className="text-xs font-semibold text-white/30 tracking-widest uppercase mb-2">
-                      We Retired
-                    </div>
-                    <div className="text-lg font-bold text-white/50 line-through decoration-[#ee5a2f] mb-4">
-                      {item.from}
-                    </div>
-                    <div className="text-xs font-semibold text-[#eeba2f] tracking-widest uppercase mb-2">
-                      In Favor Of
-                    </div>
-                    <div className="text-xl font-bold text-white">{item.to}</div>
-                  </div>
+              <div className="bg-white/5 rounded-2xl p-8 border border-white/10 hover:border-white/20 hover:bg-white/[0.07] transition-all duration-300">
+                <div className="text-xs font-semibold text-white/30 tracking-widest uppercase mb-2">
+                  We Retired
                 </div>
+                <div className="text-lg font-bold text-white/50 line-through decoration-[#ee5a2f] mb-5">
+                  {item.from}
+                </div>
+                <div className="w-8 h-px bg-[#eeba2f]/40 mb-5" />
+                <div className="text-xs font-semibold text-[#eeba2f] tracking-widest uppercase mb-2">
+                  In Favor Of
+                </div>
+                <div className="text-xl font-bold text-white">{item.to}</div>
               </div>
             </AnimateOnScroll>
           ))}

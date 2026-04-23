@@ -40,7 +40,7 @@ export default function Outcomes() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {outcomes.map((o, i) => (
             <AnimateOnScroll key={o.type} delay={i * 120}>
-              <div className="bg-[#f9f9f7] rounded-2xl p-8 border border-[#e5e5e5] hover:border-[#eeba2f]/40 transition-colors duration-300">
+              <div className="bg-white rounded-2xl p-8 border border-[#e5e5e5] border-t-2 border-t-[#eeba2f] hover:shadow-[0_8px_40px_rgba(0,0,0,0.08)] hover:border-t-[#eeba2f] transition-all duration-300">
                 <div className="text-xs font-semibold text-[#666] tracking-widest uppercase mb-6">
                   {o.type}
                 </div>

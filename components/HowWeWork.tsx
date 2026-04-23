@@ -37,8 +37,8 @@ export default function HowWeWork() {
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
           {steps.map((step, i) => (
             <AnimateOnScroll key={step.num} delay={i * 120}>
-              <div className="relative">
-                <div className="text-7xl font-black text-white/5 leading-none mb-4">{step.num}</div>
+              <div className="relative border-l-2 border-[#eeba2f]/20 pl-6 hover:border-[#eeba2f]/60 transition-colors duration-300">
+                <div className="text-7xl font-black text-white/5 leading-none mb-4 select-none">{step.num}</div>
                 <h3 className="text-2xl font-bold text-white mb-4">{step.title}</h3>
                 <p className="text-white/60 leading-relaxed">{step.desc}</p>
               </div>

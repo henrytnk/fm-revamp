@@ -67,7 +67,7 @@ export default function Services() {
             <AnimateOnScroll key={service.num} delay={i * 80}>
               <Link
                 href={service.href}
-                className="group flex flex-col md:flex-row md:items-center gap-4 py-8 hover:bg-[#f9f9f9] -mx-4 px-4 rounded-xl transition-colors duration-200"
+                className="group flex flex-col md:flex-row md:items-center gap-4 py-8 -mx-4 px-4 rounded-xl transition-all duration-200 hover:bg-gradient-to-r hover:from-[#f4f4f0] hover:to-transparent border-l-2 border-transparent hover:border-[#eeba2f] hover:pl-6"
               >
                 <div className="text-sm font-semibold text-[#eeba2f] w-16 shrink-0">{service.num}</div>
                 <div className="text-xs font-semibold text-[#666] tracking-widest uppercase w-48 shrink-0">

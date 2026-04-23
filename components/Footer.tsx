@@ -20,6 +20,7 @@ export default function Footer() {
 
   return (
     <footer className="bg-[#202020] text-white">
+      <div className="h-px bg-gradient-to-r from-transparent via-[#eeba2f]/40 to-transparent" />
       <div className="max-w-7xl mx-auto px-6 lg:px-8 py-16">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Brand */}
