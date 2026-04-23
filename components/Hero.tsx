@@ -3,6 +3,7 @@
 import { motion } from "framer-motion";
 import Link from "next/link";
 import Image from "next/image";
+import WordsRotateIn from "./WordsRotateIn";
 
 const clients = [
   { name: "PepsiCo", src: "https://media.base44.com/images/public/69e6c4bd9bbd15c86a9a4b38/7c2ebee46_image.png" },
@@ -54,18 +55,15 @@ export default function Hero() {
         </motion.div>
 
         {/* Headline */}
-        <motion.h1
-          initial={{ opacity: 0, y: 24 }}
-          animate={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8, delay: 0.1 }}
-          className="text-5xl sm:text-6xl md:text-7xl font-black font-sans text-white leading-[1.05] tracking-tight mb-8"
-        >
-          We don&apos;t sell hours.
-          <br />
-          <span className="text-[#eeba2f] font-serif italic">We sell profit</span>
-          <br />
-          &amp; growth.
-        </motion.h1>
+        <WordsRotateIn immediate={true} delay={200} className="mb-8">
+          <h1 className="text-5xl sm:text-6xl md:text-7xl font-black font-sans text-white leading-[1.05] tracking-tight">
+            We don&apos;t sell hours.
+            <br />
+            <span className="text-[#eeba2f] font-serif italic">We sell profit</span>
+            <br />
+            &amp; growth.
+          </h1>
+        </WordsRotateIn>
 
         {/* Subheading */}
         <motion.p

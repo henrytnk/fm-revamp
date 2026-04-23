@@ -1,6 +1,7 @@
 "use client";
 
 import AnimateOnScroll from "./AnimateOnScroll";
+import WordsRotateIn from "./WordsRotateIn";
 
 const outcomes = [
   {
@@ -31,10 +32,12 @@ export default function Outcomes() {
           <p className="text-xs font-semibold text-[#eeba2f] tracking-widest uppercase mb-4">
             04 · Outcomes
           </p>
-          <h2 className="text-4xl md:text-5xl font-black font-sans text-[#202020] leading-tight">
-            What it looks like when{" "}
-            <span className="text-[#eeba2f] font-serif italic">intelligence shows up</span> in the numbers.
-          </h2>
+          <WordsRotateIn>
+            <h2 className="text-4xl md:text-5xl font-black font-sans text-[#202020] leading-tight">
+              What it looks like when{" "}
+              <span className="text-[#eeba2f] font-serif italic">intelligence shows up</span> in the numbers.
+            </h2>
+          </WordsRotateIn>
         </AnimateOnScroll>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

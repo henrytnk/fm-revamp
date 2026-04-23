@@ -2,6 +2,7 @@
 
 import AnimateOnScroll from "./AnimateOnScroll";
 import Link from "next/link";
+import WordsRotateIn from "./WordsRotateIn";
 
 const services = [
   {
@@ -55,10 +56,12 @@ export default function Services() {
           <p className="text-xs font-semibold text-[#eeba2f] tracking-widest uppercase mb-4">
             02 · What We Do
           </p>
-          <h2 className="text-4xl md:text-5xl font-black font-sans text-[#202020] leading-tight mb-4">
-            Five systems. One mandate:<br />
-            <span className="text-[#eeba2f] font-serif italic">turn AI into P&amp;L.</span>
-          </h2>
+          <WordsRotateIn>
+            <h2 className="text-4xl md:text-5xl font-black font-sans text-[#202020] leading-tight mb-4">
+              Five systems. One mandate:<br />
+              <span className="text-[#eeba2f] font-serif italic">turn AI into P&amp;L.</span>
+            </h2>
+          </WordsRotateIn>
         </AnimateOnScroll>
 
         {/* Services list */}

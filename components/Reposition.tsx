@@ -1,6 +1,7 @@
 "use client";
 
 import AnimateOnScroll from "./AnimateOnScroll";
+import WordsRotateIn from "./WordsRotateIn";
 
 const retired = [
   { from: "Billable hours", to: "Outcome pricing" },
@@ -17,10 +18,12 @@ export default function Reposition() {
           <p className="text-xs font-semibold text-[#eeba2f] tracking-widest uppercase mb-4">
             03 · The Reposition
           </p>
-          <h2 className="text-4xl md:text-5xl font-black font-sans text-white leading-tight max-w-2xl">
-            The agency model is burned out.
-            <span className="text-[#eeba2f] font-serif italic">We rebuilt it around AI</span> — and your P&amp;L.
-          </h2>
+          <WordsRotateIn>
+            <h2 className="text-4xl md:text-5xl font-black font-sans text-white leading-tight max-w-2xl">
+              The agency model is burned out.
+              <span className="text-[#eeba2f] font-serif italic">We rebuilt it around AI</span> — and your P&amp;L.
+            </h2>
+          </WordsRotateIn>
         </AnimateOnScroll>
 
         <AnimateOnScroll delay={200}>

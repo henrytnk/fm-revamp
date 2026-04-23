@@ -1,6 +1,7 @@
 "use client";
 
 import AnimateOnScroll from "./AnimateOnScroll";
+import WordsRotateIn from "./WordsRotateIn";
 
 const steps = [
   {
@@ -28,10 +29,12 @@ export default function HowWeWork() {
           <p className="text-xs font-semibold text-[#eeba2f] tracking-widest uppercase mb-4">
             05 · How We Work
           </p>
-          <h2 className="text-4xl md:text-5xl font-black font-sans text-white leading-tight">
-            A short engagement.{" "}
-            <span className="text-[#eeba2f] font-serif italic">A long runway.</span>
-          </h2>
+          <WordsRotateIn>
+            <h2 className="text-4xl md:text-5xl font-black font-sans text-white leading-tight">
+              A short engagement.{" "}
+              <span className="text-[#eeba2f] font-serif italic">A long runway.</span>
+            </h2>
+          </WordsRotateIn>
         </AnimateOnScroll>
 
         <div className="grid grid-cols-1 md:grid-cols-3 gap-8">

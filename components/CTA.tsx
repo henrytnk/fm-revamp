@@ -2,6 +2,7 @@
 
 import AnimateOnScroll from "./AnimateOnScroll";
 import Link from "next/link";
+import WordsRotateIn from "./WordsRotateIn";
 
 export default function CTA() {
   return (
@@ -12,11 +13,13 @@ export default function CTA() {
           <p className="text-xs font-semibold text-[#eeba2f] tracking-widest uppercase mb-4">
             Ready When You Are
           </p>
-          <h2 className="text-4xl md:text-5xl font-black font-sans text-[#202020] leading-tight mb-6">
-            Bring us a business problem.
-            <br />
-            <span className="text-[#eeba2f] font-serif italic">We&apos;ll bring the AI.</span>
-          </h2>
+          <WordsRotateIn className="mb-6">
+            <h2 className="text-4xl md:text-5xl font-black font-sans text-[#202020] leading-tight">
+              Bring us a business problem.
+              <br />
+              <span className="text-[#eeba2f] font-serif italic">We&apos;ll bring the AI.</span>
+            </h2>
+          </WordsRotateIn>
           <p className="text-lg text-[#666] leading-relaxed mb-10 max-w-xl mx-auto">
             Month-to-month retainers starting at $1,500. A 30-minute strategy call is free — you&apos;ll
             leave with a working hypothesis even if we never work together.
