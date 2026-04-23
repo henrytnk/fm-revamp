@@ -118,17 +118,23 @@ export default function AboutPage() {
                     href="https://www.linkedin.com/in/ricardocasas"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xs font-semibold text-[#202020] hover:text-[#eeba2f] transition-colors border-b border-current pb-0.5"
+                    className="text-xs font-semibold text-[#202020] hover:text-[#eeba2f] transition-colors border-b border-current pb-0.5 inline-flex items-center gap-1"
                   >
-                    LINKEDIN ↗
+                    LINKEDIN
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 17L17 7M10 7H17V14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
                   </a>
                   <a
                     href="https://forbes.com/councils/forbesagencycouncil/people/ricardocasas/"
                     target="_blank"
                     rel="noopener noreferrer"
-                    className="text-xs font-semibold text-[#202020] hover:text-[#eeba2f] transition-colors border-b border-current pb-0.5"
+                    className="text-xs font-semibold text-[#202020] hover:text-[#eeba2f] transition-colors border-b border-current pb-0.5 inline-flex items-center gap-1"
                   >
-                    FORBES COUNCIL ↗
+                    FORBES COUNCIL
+                    <svg width="14" height="14" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M7 17L17 7M10 7H17V14" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
                   </a>
                 </div>
                 <blockquote className="text-lg font-serif italic text-[#666] border-l-4 border-[#eeba2f] pl-6 mb-6">
@@ -225,7 +231,12 @@ export default function AboutPage() {
                   <h3 className="font-bold text-white group-hover:text-[#eeba2f] transition-colors mb-1">
                     {f.title}
                   </h3>
-                  <p className="text-sm text-white/50">{f.sub} →</p>
+                  <p className="text-sm text-white/50 inline-flex items-center gap-1">
+                    {f.sub}
+                    <svg width="16" height="16" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                      <path d="M5 12H19M13 6L19 12L13 18" stroke="currentColor" strokeWidth="2" strokeLinecap="round" strokeLinejoin="round"/>
+                    </svg>
+                  </p>
                 </Link>
               </AnimateOnScroll>
             ))}
