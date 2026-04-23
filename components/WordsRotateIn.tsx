@@ -106,8 +106,9 @@ function splitTextNodes(root: HTMLElement) {
     wordOuter.className = 'word';
     wordOuter.style.overflow = 'hidden';
     wordOuter.style.display = 'inline-block';
-    wordOuter.style.paddingBottom = '0.2em';
-    wordOuter.style.marginBottom = '-0.2em';
+    wordOuter.style.paddingBottom = '0.25em';
+    wordOuter.style.paddingRight = '0.1em';
+    wordOuter.style.marginBottom = '-0.25em';
 
     el.parentNode?.insertBefore(wordOuter, el);
     wordOuter.appendChild(el);
@@ -143,8 +144,9 @@ function splitTextNodes(root: HTMLElement) {
         wordOuter.className = 'word';
         wordOuter.style.overflow = 'hidden';
         wordOuter.style.display = 'inline-block';
-        wordOuter.style.paddingBottom = '0.2em';
-        wordOuter.style.marginBottom = '-0.2em';
+        wordOuter.style.paddingBottom = '0.25em';
+        wordOuter.style.paddingRight = '0.1em';
+        wordOuter.style.marginBottom = '-0.25em';
 
         const wordInner = document.createElement('span');
         wordInner.className = 'word-inner';
