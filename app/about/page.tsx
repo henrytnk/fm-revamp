@@ -40,6 +40,23 @@ const aiFirstFeatures = [
   { title: "Competitive Intelligence", sub: "Continuous market signal analysis", href: "/services/seo" },
 ];
 
+const team = [
+  { name: "Ricardo Casas", role: "CEO", img: "https://www.fahrenheitmarketing.com/app/uploads/2022/06/Ricardo.webp" },
+  { name: "Brandon Dunham", role: "COO", img: "https://www.fahrenheitmarketing.com/app/uploads/2014/10/Brandon_New-1-768x967.webp" },
+  { name: "Evan Casas", role: "Account Manager", img: "https://www.fahrenheitmarketing.com/app/uploads/2022/10/Evan_pic-1-768x958.jpg.webp" },
+  { name: "Courtney Canham", role: "Account Manager", img: "https://www.fahrenheitmarketing.com/app/uploads/2024/03/Courtney-768x967.jpg.webp" },
+  { name: "Alex Veldsman", role: "Account Manager", img: "https://www.fahrenheitmarketing.com/app/uploads/2026/02/alex-headshot-768x960.webp" },
+  { name: "Chelsea Gardner", role: "UX/UI Designer", img: "https://www.fahrenheitmarketing.com/app/uploads/2023/06/Chelsea-768x960.jpg.webp" },
+  { name: "Henry Tanaka", role: "Web Developer", img: "https://www.fahrenheitmarketing.com/app/uploads/2020/06/henry-headshot-768x960.jpg.webp" },
+  { name: "Ian Aleck", role: "Web Developer", img: "https://www.fahrenheitmarketing.com/app/uploads/2018/07/ian-aleck-768x960.jpg.webp" },
+  { name: "Jorge Roberto", role: "Web Developer", img: "https://www.fahrenheitmarketing.com/app/uploads/2022/06/Jorge-.webp" },
+  { name: "Laurel Casas", role: "Financial Services", img: "https://www.fahrenheitmarketing.com/app/uploads/2016/08/Laurel-768x960.jpg.webp" },
+  { name: "Louis Van Den Berg", role: "Senior Marketing Associate", img: "https://www.fahrenheitmarketing.com/app/uploads/2025/06/Louis-1-768x967.webp" },
+  { name: "Nick Erasmus", role: "Creative Director", img: "https://www.fahrenheitmarketing.com/app/uploads/2022/06/Nick-.webp" },
+  { name: "Steven Bosch", role: "Marketing Director", img: "https://www.fahrenheitmarketing.com/app/uploads/2023/11/Steven-768x961.jpg.webp" },
+  { name: "Tita Ilunga", role: "Web Developer", img: "https://www.fahrenheitmarketing.com/app/uploads/2023/06/Tita-768x964.jpg.webp" },
+];
+
 export default function AboutPage() {
   return (
     <>
@@ -238,6 +255,42 @@ export default function AboutPage() {
                     </svg>
                   </p>
                 </Link>
+              </AnimateOnScroll>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Team */}
+      <section className="bg-white py-24">
+        <div className="max-w-7xl mx-auto px-6 lg:px-8">
+          <AnimateOnScroll className="mb-16">
+            <p className="text-xs font-semibold text-[#eeba2f] tracking-widest uppercase mb-4">
+              Our Team
+            </p>
+            <h2 className="text-4xl font-black text-[#202020]">The People Behind the Work</h2>
+          </AnimateOnScroll>
+
+          <div className="grid grid-cols-2 sm:grid-cols-3 lg:grid-cols-4 gap-6">
+            {team.map((member, i) => (
+              <AnimateOnScroll key={member.name} delay={i * 60}>
+                <div className="group relative overflow-hidden rounded-2xl aspect-[3/4] bg-[#1a1a1a]">
+                  <Image
+                    src={member.img}
+                    alt={member.name}
+                    fill
+                    className="object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-105"
+                    unoptimized
+                  />
+                  {/* Always-visible bottom gradient */}
+                  <div className="absolute inset-0 bg-gradient-to-t from-[#202020] via-[#202020]/20 to-transparent" />
+                  {/* Info */}
+                  <div className="absolute bottom-0 left-0 right-0 p-5">
+                    <div className="w-6 h-px bg-[#eeba2f] mb-3 transition-all duration-300 group-hover:w-10" />
+                    <h3 className="font-black text-white text-sm leading-tight mb-1">{member.name}</h3>
+                    <p className="text-[10px] font-semibold text-[#eeba2f] tracking-widest uppercase">{member.role}</p>
+                  </div>
+                </div>
               </AnimateOnScroll>
             ))}
           </div>
