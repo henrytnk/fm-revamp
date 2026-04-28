@@ -41,20 +41,20 @@ const aiFirstFeatures = [
 ];
 
 const team = [
-  { name: "Ricardo Casas", role: "CEO", img: "https://www.fahrenheitmarketing.com/app/uploads/2022/06/Ricardo.webp" },
-  { name: "Brandon Dunham", role: "COO", img: "https://www.fahrenheitmarketing.com/app/uploads/2014/10/Brandon_New-1-768x967.webp" },
-  { name: "Evan Casas", role: "Account Manager", img: "https://www.fahrenheitmarketing.com/app/uploads/2022/10/Evan_pic-1-768x958.jpg.webp" },
-  { name: "Courtney Canham", role: "Account Manager", img: "https://www.fahrenheitmarketing.com/app/uploads/2024/03/Courtney-768x967.jpg.webp" },
-  { name: "Alex Veldsman", role: "Account Manager", img: "https://www.fahrenheitmarketing.com/app/uploads/2026/02/alex-headshot-768x960.webp" },
-  { name: "Chelsea Gardner", role: "UX/UI Designer", img: "https://www.fahrenheitmarketing.com/app/uploads/2023/06/Chelsea-768x960.jpg.webp" },
-  { name: "Henry Tanaka", role: "Web Developer", img: "https://www.fahrenheitmarketing.com/app/uploads/2020/06/henry-headshot-768x960.jpg.webp" },
-  { name: "Ian Aleck", role: "Web Developer", img: "https://www.fahrenheitmarketing.com/app/uploads/2018/07/ian-aleck-768x960.jpg.webp" },
-  { name: "Jorge Roberto", role: "Web Developer", img: "https://www.fahrenheitmarketing.com/app/uploads/2022/06/Jorge-.webp" },
-  { name: "Laurel Casas", role: "Financial Services", img: "https://www.fahrenheitmarketing.com/app/uploads/2016/08/Laurel-768x960.jpg.webp" },
-  { name: "Louis Van Den Berg", role: "Senior Marketing Associate", img: "https://www.fahrenheitmarketing.com/app/uploads/2025/06/Louis-1-768x967.webp" },
-  { name: "Nick Erasmus", role: "Creative Director", img: "https://www.fahrenheitmarketing.com/app/uploads/2022/06/Nick-.webp" },
-  { name: "Steven Bosch", role: "Marketing Director", img: "https://www.fahrenheitmarketing.com/app/uploads/2023/11/Steven-768x961.jpg.webp" },
-  { name: "Tita Ilunga", role: "Web Developer", img: "https://www.fahrenheitmarketing.com/app/uploads/2023/06/Tita-768x964.jpg.webp" },
+  { name: "Ricardo Casas", role: "CEO", img: "/team/ricardo.webp" },
+  { name: "Brandon Dunham", role: "COO", img: "/team/brandon.webp" },
+  { name: "Evan Casas", role: "Account Manager", img: "/team/evan.webp" },
+  { name: "Courtney Canham", role: "Account Manager", img: "/team/courtney.webp" },
+  { name: "Alex Veldsman", role: "Account Manager", img: "/team/alex.webp" },
+  { name: "Chelsea Gardner", role: "UX/UI Designer", img: "/team/chelsea.webp" },
+  { name: "Henry Tanaka", role: "Web Developer", img: "/team/henry.webp" },
+  { name: "Ian Aleck", role: "Web Developer", img: "/team/ian.webp" },
+  { name: "Jorge Roberto", role: "Web Developer", img: "/team/jorge.webp" },
+  { name: "Laurel Casas", role: "Financial Services", img: "/team/laurel.webp" },
+  { name: "Louis Van Den Berg", role: "Senior Marketing Associate", img: "/team/louis.webp" },
+  { name: "Nick Erasmus", role: "Creative Director", img: "/team/nick.webp" },
+  { name: "Steven Bosch", role: "Marketing Director", img: "/team/steven.webp" },
+  { name: "Tita Ilunga", role: "Web Developer", img: "/team/tita.webp" },
 ];
 
 export default function AboutPage() {
@@ -280,7 +280,6 @@ export default function AboutPage() {
                     alt={member.name}
                     fill
                     className="object-cover object-top grayscale group-hover:grayscale-0 transition-all duration-500 group-hover:scale-105"
-                    unoptimized
                   />
                   {/* Always-visible bottom gradient */}
                   <div className="absolute inset-0 bg-gradient-to-t from-[#202020] via-[#202020]/20 to-transparent" />
